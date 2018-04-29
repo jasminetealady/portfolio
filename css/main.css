@@ -177,7 +177,7 @@ ul li {
   background-image: url("../images/flatiron.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   color: transparent; }
 
 .box3:hover {
@@ -203,6 +203,29 @@ ul li {
   line-height: 1.5;
   padding: 3rem; }
 
+/* Bio Section */
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.pinkraz {
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  margin-bottom: 4rem; }
+
 @media only screen and (min-width: 900px) {
   .wrapper {
     flex-direction: row;
@@ -214,6 +237,11 @@ ul li {
     height: 100%;
     padding-left: 3rem;
     padding-right: 3rem; }
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; }
   .section2 {
     width: 60%;
     height: 100%;
@@ -222,4 +250,18 @@ ul li {
   .box {
     height: 15rem;
     width: 45%;
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .section3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #ab909b;
+    padding-bottom: 5rem; }
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; }
+  .pinkraz {
+    width: 30%;
+    margin: 0; } }

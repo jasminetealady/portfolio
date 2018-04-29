@@ -172,7 +172,7 @@ ul li {
   background-image: url("../images/flatiron.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   color: rgba(0, 0, 0, 0);
 }
 
@@ -203,6 +203,34 @@ ul li {
   padding: 3rem;
 }
 
+/* Bio Section */
+
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pinkraz {
+  width: 40%;
+  height: 40%;
+  border-radius: 100%;
+  margin-bottom: 4rem;
+}
+
 
 
 
@@ -222,6 +250,13 @@ ul li {
     padding-right: 3rem;
   }
 
+  .bio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
   .section2 {
     width: 60%;
     height: 100%;
@@ -234,4 +269,28 @@ ul li {
     width: 45%;
     font-size: 1.2rem;
   }
+
+  .section3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: $rosegrey;
+    padding-bottom: 5rem;
+  }
+
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+  .pinkraz {
+    width: 30%;
+    margin: 0;
+  }
+
+  // .section3 p {
+  //   width: 0%;
+  // }
 }
