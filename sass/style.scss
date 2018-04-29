@@ -1,0 +1,232 @@
+$rose: #f1527e;
+$rosegrey: #ab909b;
+$babypink: #ffc7da;
+$parisine: 'parisplus-std';
+$parisine-light: 'parisplus-clair';
+$avenir: "Avenir Next";
+$proxima: "Proxima Soft";
+$whitepink: #f9dde6;
+$mauve: #d0889d;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+
+}
+
+/* Navigation */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 5rem;
+}
+
+nav a {
+  color: $mauve;
+  font-family: "Quicksand";
+  font-weight: 300;
+  font-size: .8rem;
+  padding-right: 4rem;
+  text-decoration: none;
+}
+
+nav a:hover, ul li:hover {
+  color: lightblue;
+}
+
+/* Main */
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+hr {
+  width: 75%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, white, $babypink, $rose, $babypink, white);
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Heading */
+
+h1 {
+  font-family: "Maneo";
+  font-weight: 100;
+  color: $mauve;
+  font-size: 4rem;
+  margin-top: 4rem;
+}
+
+.wrapper span {
+  font-family: $parisine-light;
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: .8px;
+  line-height: 1.5;
+  color: $rosegrey;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+ul li {
+  font-size: 1rem;
+  font-family: "Quicksand";
+  font-weight: 400;
+  padding: 1rem;
+  color: $mauve;
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.section2 {
+  background-color: $rose;
+  width: 100%;
+  height: 100%;
+}
+
+
+.section2, .section4 {
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $rose;
+  color: white;
+}
+
+/* Portfolio */
+
+.section2 h1 {
+  color: $whitepink;
+}
+
+
+.projects {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+}
+
+.projects-top {
+  margin-top: 4rem;
+}
+
+.box {
+  width: 40%;
+  height: 8rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Quicksand";
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: $mauve;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 1s ease;
+}
+
+.box1:hover {
+  background-image: url("../images/blog.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(0, 0, 0, 0);
+}
+
+.box2:hover {
+  background-image: url("../images/flatiron.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(0, 0, 0, 0);
+}
+
+.box3:hover {
+  background-image: url("../images/andromeda.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(0, 0, 0, 0);
+}
+
+.box4:hover {
+  background-image: url("../images/loveoftea.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(0, 0, 0, 0);
+}
+
+/* Paragraph Styling General */
+
+.section1 p, .section2 p, .section3 p, .section4 p {
+  font-size: 1rem;
+  font-family: $parisine-light;
+  letter-spacing: .8px;
+  line-height: 1.5;
+  padding: 3rem;
+}
+
+
+
+
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .section1 {
+    width: 40%;
+    height: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .section2 {
+    width: 60%;
+    height: 100%;
+    padding: 4rem;
+    box-shadow: 0 0 2px 2px $babypink;
+  }
+
+  .box {
+    height: 15rem;
+    width: 45%;
+    font-size: 1.2rem;
+  }
+}
