@@ -8,6 +8,11 @@ $proxima: "Proxima Soft";
 $whitepink: #f9dde6;
 $mauve: #d0889d;
 
+@font-face {
+  font-family: "Maneo";
+  src: url("../fonts/maneo-webfont.woff");
+}
+
 html, body {
   width: 100%;
   height: 100%;
