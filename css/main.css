@@ -165,7 +165,7 @@ ul li {
   letter-spacing: 1.5px;
   color: #d0889d;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: .75rem;
   transition: background-color 1s ease; }
 
 .box1:hover {
