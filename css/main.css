@@ -65,7 +65,7 @@ nav {
 nav a {
   color: #d0889d;
   font-family: "Quicksand";
-  font-weight: 300;
+  font-weight: bold;
   font-size: .8rem;
   padding-right: 4rem;
   text-decoration: none; }
@@ -122,7 +122,7 @@ h1 {
 ul li {
   font-size: 1rem;
   font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   padding: 1rem;
   color: #d0889d;
   text-align: center;
@@ -227,7 +227,7 @@ ul li {
   border-radius: 100%;
   margin-bottom: 4rem; }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 993px) {
   .wrapper {
     flex-direction: row;
     align-items: center;
@@ -265,5 +265,8 @@ ul li {
     align-items: center;
     width: 50%; }
   .pinkraz {
-    width: 30%;
-    margin: 0; } }
+    display: none; } }
+
+@media only screen and (min-width: 635px) and (max-width: 992px) {
+  .pinkraz {
+    width: 30%; } }

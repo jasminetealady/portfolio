@@ -36,7 +36,7 @@ nav {
 nav a {
   color: $mauve;
   font-family: "Quicksand";
-  font-weight: 300;
+  font-weight: bold;
   font-size: .8rem;
   padding-right: 4rem;
   text-decoration: none;
@@ -104,7 +104,7 @@ h1 {
 ul li {
   font-size: 1rem;
   font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   padding: 1rem;
   color: $mauve;
   text-align: center;
@@ -236,7 +236,7 @@ ul li {
 
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 993px) {
   .wrapper {
     flex-direction: row;
     align-items: center;
@@ -288,11 +288,17 @@ ul li {
   }
 
   .pinkraz {
-    width: 30%;
-    margin: 0;
+    display: none;
   }
 
   // .section3 p {
   //   width: 0%;
   // }
+}
+
+@media only screen and (min-width: 635px) and (max-width: 992px) {
+  .pinkraz {
+    width: 30%;
+  }
+
 }
