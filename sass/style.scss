@@ -232,6 +232,10 @@ ul li {
   margin-bottom: 4rem;
 }
 
+.section4 {
+  display: none;
+}
+
 
 
 
@@ -291,9 +295,27 @@ ul li {
     display: none;
   }
 
-  // .section3 p {
-  //   width: 0%;
-  // }
+  .bio {
+    display: none;
+  }
+
+  .section3 {
+    // padding: 10rem;
+  }
+
+  .section4 {
+    display: flex;
+  }
+
+  .section4 p {
+    padding: 5% 10% 10% 10%;
+    // padding: 5rem 10rem 10rem 10rem;
+    font-size: 1.3rem;
+  }
+
+  .section4 h1 {
+    color: $whitepink;
+  }
 }
 
 @media only screen and (min-width: 635px) and (max-width: 992px) {

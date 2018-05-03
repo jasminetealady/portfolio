@@ -227,6 +227,9 @@ ul li {
   border-radius: 100%;
   margin-bottom: 4rem; }
 
+.section4 {
+  display: none; }
+
 @media only screen and (min-width: 993px) {
   .wrapper {
     flex-direction: row;
@@ -265,7 +268,16 @@ ul li {
     align-items: center;
     width: 50%; }
   .pinkraz {
-    display: none; } }
+    display: none; }
+  .bio {
+    display: none; }
+  .section4 {
+    display: flex; }
+  .section4 p {
+    padding: 5% 10% 10% 10%;
+    font-size: 1.3rem; }
+  .section4 h1 {
+    color: #f9dde6; } }
 
 @media only screen and (min-width: 635px) and (max-width: 992px) {
   .pinkraz {
