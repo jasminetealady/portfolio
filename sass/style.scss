@@ -7,9 +7,10 @@ $avenir: "Avenir Next";
 $proxima: "Proxima Soft";
 $whitepink: #f9dde6;
 $mauve: #d0889d;
+$maneo: "Maneo";
 
 @font-face {
-  font-family: "Maneo";
+  font-family: $maneo;
   src: url("../fonts/maneo-webfont.woff");
 }
 
@@ -195,7 +196,7 @@ ul li {
 
 /* Paragraph Styling General */
 
-.section1 p, .section2 p, .section3 p, .section4 p {
+.section1 p, .section2 p, .section3 p, .section4 p, .section5 p, footer p {
   font-size: 1rem;
   font-family: $parisine-light;
   font-weight: bold;
@@ -236,9 +237,52 @@ ul li {
   display: none;
 }
 
+/*--------Education------*/
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $rose;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.section5 h1 {
+  color: $whitepink;
+  margin-bottom: 2rem;
+}
+
+.section5 p {
+  color: white;
+  margin: 0;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+.flatiron-pic {
+  display: none;
+  width: 10%;
+  margin-top: 3rem;
+}
+
+.codecademy-pic {
+  display: none;
+  width: 20%;
+}
 
 
 
+
+
+
+
+/* ----------------Desktop Version---------------*/
 
 @media only screen and (min-width: 993px) {
   .wrapper {
@@ -276,20 +320,9 @@ ul li {
     border: solid .3rem $whitepink;
   }
 
-  .section3 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    color: $rosegrey;
-    padding-bottom: 5rem;
-  }
 
-  .profile-pic {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-  }
+  /*------Bio------*/
+
 
   .pinkraz {
     display: none;
@@ -297,10 +330,6 @@ ul li {
 
   .bio {
     display: none;
-  }
-
-  .section3 {
-    // padding: 10rem;
   }
 
   .section4 {
@@ -315,6 +344,80 @@ ul li {
 
   .section4 h1 {
     color: $whitepink;
+  }
+
+  /*------Empty Section Above Bio------*/
+
+  .section3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: $rosegrey;
+    padding-bottom: 5rem;
+  }
+
+  /*------Education------*/
+
+  .section5 {
+    background-color: white;
+    padding-bottom: 8rem;
+  }
+
+  .section5 h1 {
+    margin-bottom: 0;
+    color: $rose;
+  }
+
+  .section5 p {
+    color: $rosegrey;
+    font-size: 1.3rem;
+    // width: 80%;
+  }
+
+  .flatiron-pic {
+    display: block;
+    width: 20%;
+    box-shadow: 0px 0px 15px 1px $rosegrey;
+    margin-right: 3rem;
+  }
+
+  .codecademy-pic {
+    display: block;
+    width: 20%;
+    box-shadow: 0px 0px 15px 1px $rosegrey;
+    margin-right: 3rem;
+  }
+
+  .education-wrapper {
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    // align-items: center;
+  }
+
+  .education {
+    margin-top: 3rem;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    // width: 100%;
+    // flex-wrap: wrap;
+  }
+
+  /*------Footer------*/
+
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $rose;
+  }
+
+  footer p {
+    font-family: $maneo;
+    color: $whitepink;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
   }
 }
 

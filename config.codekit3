@@ -59,11 +59,44 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/images\/codecademy.jpg": {
+		"ft": 16384,
+		"iS": 7327,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/images\/codecademy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/images\/flatiron-school.png": {
+		"ft": 32768,
+		"iS": 9179,
+		"oA": 0,
+		"oAP": "\/images\/flatiron-school.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/images\/flatiron.png": {
 		"ft": 32768,
 		"iS": 1280174,
 		"oA": 0,
 		"oAP": "\/images\/flatiron.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/flatironschool.png": {
+		"ft": 32768,
+		"iS": 2383,
+		"oA": 0,
+		"oAP": "\/images\/flatironschool.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
